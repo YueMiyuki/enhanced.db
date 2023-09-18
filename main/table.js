@@ -13,7 +13,7 @@ class Table {
    * const table = new Table('myTable', { clearOnStart: false, filename: 'foo.sqlite' })
    */
 
-  constructor(tablename, options) {
+  constructor(tablename, options={}) { // eslint-disable-line no-console
     if (!tablename) {
       tablename = "database";
     }
