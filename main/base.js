@@ -25,7 +25,7 @@ class Base {
   set(key, value) {
     this.db
       .prepare(
-        `CREATE TABLE IF NOT EXISTS ${this.table} (key TEXT, value TEXT)`
+        `CREATE TABLE IF NOT EXISTS ${this.table} (key TEXT, value TEXT)`,
       )
       .run();
 
@@ -56,7 +56,7 @@ class Base {
   get(key) {
     this.db
       .prepare(
-        `CREATE TABLE IF NOT EXISTS ${this.table} (key TEXT, value TEXT)`
+        `CREATE TABLE IF NOT EXISTS ${this.table} (key TEXT, value TEXT)`,
       )
       .run();
 
@@ -80,7 +80,7 @@ class Base {
   delete(key) {
     this.db
       .prepare(
-        `CREATE TABLE IF NOT EXISTS ${this.table} (key TEXT, value TEXT)`
+        `CREATE TABLE IF NOT EXISTS ${this.table} (key TEXT, value TEXT)`,
       )
       .run();
     this.db.prepare(`DELETE FROM ${this.table} WHERE key = (?)`).run(key);
@@ -93,12 +93,12 @@ class Base {
   all() {
     this.db
       .prepare(
-        `CREATE TABLE IF NOT EXISTS ${this.table} (key TEXT, value TEXT)`
+        `CREATE TABLE IF NOT EXISTS ${this.table} (key TEXT, value TEXT)`,
       )
       .run();
 
     const statement = this.db.prepare(
-      `SELECT * FROM ${this.table} WHERE key IS NOT NULL`
+      `SELECT * FROM ${this.table} WHERE key IS NOT NULL`,
     );
     const data = statement.iterate();
     const result = [];
