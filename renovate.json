@@ -7,6 +7,11 @@
       "enabled": true
     },
     {
+
+      "matchDepTypes": ["devDependencies"],
+      "automerge": true
+    },
+    {
       "packageNames": ["chalk"],
       "enabled": false
     }
