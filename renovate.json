@@ -3,6 +3,10 @@
   "extends": ["config:base", "group:all"],
   "packageRules": [
     {
+      "matchPackagePatterns": ["*"],
+      "enabled": true
+    },
+    {
       "packageNames": ["chalk"],
       "enabled": false
     }
