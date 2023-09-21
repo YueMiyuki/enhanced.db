@@ -7,7 +7,6 @@
       "enabled": true
     },
     {
-
       "matchDepTypes": ["devDependencies"],
       "automerge": true
     },
