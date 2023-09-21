@@ -3,7 +3,7 @@
 **Docs:** [docs.md](https://github.com/ItzMiracleOwO/enhanced.db/blob/master/docs.md)
 
 ```js
-const db = require("enhanced.db");
+const db = require("enhanced.db-new");
 
 // Set Options
 const options = {
