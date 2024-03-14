@@ -28,10 +28,10 @@
     "test": "mocha"
   },
   "dependencies": {
-    "better-sqlite3": "^8.4.0"
+    "better-sqlite3": "^9.0.0"
   },
   "devDependencies": {
-    "chai": "^4.3.7",
+    "chai": "^5.0.0",
     "eslint": "^8.41.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.27.5",
